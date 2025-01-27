@@ -1,0 +1,9 @@
+mkdir -p ~/path/to/input_directory
+mkdir -p ~/path/to/log_directory
+mkdir -p ~/path/to/output_directory
+touch ~/path/to/log_directory/audit_log.txt
+nano classify_files.sh
+bash classify_files.sh
+nano crontab_schedule.txt
+crontab crontab_schedule.txt
+crontab -l
