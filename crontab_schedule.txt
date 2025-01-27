@@ -1,0 +1,11 @@
+# Cron job to run the script every 1 hour and 23 minutes during non-business hours (5 PM - 7 AM) on business days (Monday to Friday)
+
+23 17-23,0-6/1 * * 1-5 /absolute/path/to/classify_files.sh
+
+# Explanation:
+# - 23: The minute (at 23rd minute)
+# - 17-23,0-6/1: The hours range (from 5 PM to 6 AM, executed every hour in this range)
+# - *: The day of the month (every day)
+# - *: The month (every month)
+# - 1-5: The days of the week (Monday to Friday)
+# - /absolute/path/to/classify_files.sh: Full path to the script being executed
